@@ -1,0 +1,401 @@
+
+/*------ CSS-------*/
+/*------ Class-------*/
+
+/*Caja 1*/
+#styloContenedorPresentacion{border-color: floralwhite;}
+#styloTitle{ font-size: medium;margin-left: 20px; padding-top: 15px;}
+#styloSubTitle{text-align: left;margin-left: 20;font-size: medium;}
+#styloContact{text-align: right; font-size: small;padding-top: 10px;margin-right: 10px;}
+#styloBarraTop{padding: 10px;}
+#styloBarraBottom{height: 50px;}
+#styloDescargas{font-size: 10px;text-align: right;}
+#descargaCV{padding: 5px;text-align: right;}
+#descargaCarta{padding: 5px;text-align: right;}
+#descargasProyectos{padding: 5px;text-align: right;}
+#descargaespacioAzuel{padding: 5px;text-align: right;}
+#barraTopFecha{margin-right: 17px;font-size: 14px;text-align: right;padding-bottom: 15px;}
+#styloFecha{margin-right:17px;font-size: 14px;text-align: right;padding-bottom: 5px;margin-top: 5%;}
+#styloDatos{text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    border-color: floralwhite;
+    border-width: 5px;}
+
+.tabs{margin-bottom: 2%;}
+
+/*Caja 1.2*/
+#styloContenedorProgramas{text-align: center;margin-top: 1em;margin-bottom: 1em;border-radius: 1em;border-color: floralwhite;border-width: 5px;}
+#styloAemet{align-items: center;padding: 10px;}
+
+/*Caja 2*/
+#styleGalleryPanel{border-radius: 5%;border-color: #eee;}
+#styloTitleGaleria{text-align: center;font-size: medium; padding-top: 10px;font-weight: 100px;}
+#styloContenedorDescargas{padding: 0.5em;}
+#txtResumen{text-align: center;font-weight: 300;margin-top: 10px;padding: 1%;font-size: small;}
+#txtProyectos{text-align: left;font-weight: 300;margin-left: 50px;font-size: small;}
+
+
+/*Caja 3*/
+#txtInfoVisor{padding: 5px;font-size: small;}
+#txtInfoWebTejar{padding: 20px;}
+#txtAccesoVisor{display: flex;justify-content: center;padding-bottom: 20px;padding-top: 3px;}
+#infoTextoTejar{font-size: x-small; align-items:center}
+
+/*Caja 4*/
+#styloTitleDescargas{align-items:right}
+#galeriaPhoto{padding-top: 5px;padding-bottom: 20px;max-width: 100%;height: auto; }
+
+#infoWebTejar{font-size: small; margin-top: 10%;}
+#infoVersion {text-align: right; font-size: 11px; margin-right: 30px;}
+
+/* Estilos para la galería */
+.gallery-container {position: relative;max-width: 600px;margin: 0 auto;}
+.gallery-img {display: none; max-width: 100%;border: 2px solid #000; /* Agregar borde a la imagen */}
+.gallery-tools {position: absolute;top: 20px;right: 0;padding: 10px;background-color: rgba(0, 0, 0, 0.5);color: white;}
+.prev, .next {position: absolute;top: 103%;transform: translateY(-50%);cursor: pointer;padding: 10px; background-color: rgba(0, 0, 0, 0.5);color: white;}
+.prev {left: 0;}
+.next {right: 0;}
+
+.toolPanel {position: absolute;top: 9%; width: 100%; transform: translateY(-50%);cursor: pointer;padding: 10px; background-color: rgba(0, 0, 0, 0.5);color: white;}
+
+.footPanel {position: absolute;top: 90%;  height: 5%;text-align: right;
+  padding: 4px;
+  font-size: x-small; width: 100%; transform: translateY(-50%);cursor: pointer;background-color: rgba(0, 0, 0, 0.5);color: white;}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 60%; /* Ajusta el ancho del carrusel según tus necesidades */
+}
+
+.carousel img {
+  width: 100%;
+  display: none;
+}
+
+.carousel img:first-child {
+  display: block;
+}
+
+.carousel-indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel-indicator span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-indicator span.active {
+  background-color: #4CAF50; /* Color verde para el indicador activo */
+} 
+
+/* Estilos para la ventana modal */
+.modal {display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);justify-content: center;align-items: center; z-index: 1;}
+.modal-content { max-width: 100%; max-height: 90vh;}
+.close {position: absolute;top: 15px;left: 15px;color: white;cursor: pointer;z-index: 1000;}
+
+.modalPhoto {display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);justify-content: center;align-items: center; z-index: 1;}
+.modalPhoto-content { max-width: 100%; max-height: 90vh;}
+.close {position: absolute;top: 15px;left: 15px;color: white;cursor: pointer;z-index: 1000;}
+
+
+/** Estilos snake*/
+.containerSnake  {
+  border: 10px solid #161515;
+  border-radius: 20px;
+
+}
+#game-container {
+  position: relative;
+}
+
+#game-panel {
+  display: inline-flex;
+  flex-direction: row;
+  position: absolute;
+  left: 5%;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 40%;
+  align-items: center;
+}
+
+#game-canvas {
+  border: 10px solid #747272;
+}
+
+.score-panel, .leaderboard-panel {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+/*
+.snake-game {
+
+}
+*/
+.score-container {
+    display: none;
+    max-height: 342px;
+    overflow: scroll;
+  }
+  
+  .player-input {
+    margin-top: 20px;
+  }
+  
+  #leaderboard {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #leaderboard li {
+    margin-bottom: 10px;
+  }
+  
+  #leaderboard li:first-child {
+    font-size: 20px;
+  }
+  
+  /* Panel de propio juego*/
+  
+  .game-container {
+    text-align: center;
+  }
+  
+  #game-canvas {
+    border: 10px solid #686767;
+    width:800px;
+    height:350px;
+  }
+  
+  #scorePanel {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .removeScore{
+    position: absolute;
+    left:50%;
+    padding: 2px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    top: 154%;
+  }
+  
+  /*Botones*/
+  #start-button{
+  position: relative;
+  left: 10%;
+  width: 40%;
+  }
+  
+  #stop-button{
+    position: relative;
+    left: 15%;
+    width: 30%;
+    }
+  
+  #botonGuardar{
+    position: relative;
+      padding: 5px;
+      left: 8%;
+  
+  }
+  
+
+  
+  #contenedortopLayersYbotonera{
+    display: flex;
+    margin-top: 5%;
+  
+  }
+  button {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  #buttonNorte{
+    position: relative;
+  
+    color: red;
+  
+  }
+  #buttonSur{color: rgb(76, 0, 255);}
+  #buttonEste{color: rgb(21, 255, 0);}
+  #buttonOeste{color: rgb(255, 0, 170);}
+
+/* Tabla aemet*/
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.table, th, td {
+    border: 1px solid #ddd;
+}
+
+.th, td {
+    padding: 12px;
+    text-align: center;
+    
+   /* writing-mode: vertical-lr;  Establece el modo de escritura vertical 
+    transform: rotate(180deg); /* Rota el texto en sentido antihorario */
+}
+
+.th {
+    background-color: #f2f2f2;
+    
+}
+
+/* Graficos aemet*/
+#graficoPredicciones{margin-top: 10%;}
+
+/*Panel de enviar correo*/
+#panel {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#nameInput, #messageInput, #emailPanel {
+  margin-bottom: 15px;
+}
+
+#messageInput {
+
+  display: flex;
+  resize: vertical;
+}
+
+#emailPanel {
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+#sendButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#sendButton:hover {
+  background-color: #45a049;
+}
+
+/****funcion inicial y spinner**/
+
+#loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#content {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Ventana modal elección medio. */
+
+.modalMedia {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modalMedia-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    text-align: center;
+    z-index: 20;
+}
+
+.closeMedia {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px;
+    cursor: pointer;
+}
+#modalMediaButton{
+  margin-left: 85%;
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+
+#styleModalMedia{
+  font-size: 16px;
+  color: black;
+  font-family: cursive;
+}
+
+
+/* CARRUSEL DE IMAGENES*/
+.controles {
+  position: absolute;
+  margin-top: 2%;
+  font-size: small;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  margin: 0 5px;
+}

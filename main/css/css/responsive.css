@@ -1,0 +1,40 @@
+/***************************************************************************************************************************/
+ /*.Tablets peque�as y moviles grandes en orientaci�n horizontal: */
+/***************************************************************************************************************************/
+    /*Botonera direcciones SNAKE*/
+    #game-panel-buttons{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap:0px;
+      border: 10px solid #161515;
+      border-radius: 20px;
+      width: 15%;
+      margin-left: 50%;
+    }
+
+
+    /* Tabla aemet*/
+  .table {
+      width: 100%;
+      font-size: 11px;
+      border-collapse: collapse;
+      margin-top: 20px;
+  }
+  
+  .table, th, td {
+      border: 1px solid #ddd;
+  }
+  
+  .th, td {
+      padding: 12px;
+      text-align: left;
+  }
+  
+  .th {
+      background-color: #f2f2f2;
+  }
+    /* Graficos aemet*/
+
+  #graficoPredicciones{margin-top: 10%;}
+
