@@ -1,0 +1,17 @@
+/************************************************************/
+/*FUNCIONALIDADES EN CONTRUCCION QUE NO SE QUIEREN MOSTRAR*/
+/************************************************************/
+
+/*Anuncios*/
+#styloContenedorAnuncio{display: none;}
+
+/*AGREGAR FOTO*/
+#styloContenedorProgramas{display: none;}
+
+
+/*ENCABEZADO Y PIE DE LAS FOTOS*/
+.toolPanel{display: none;}
+.footPanel{display: none;}
+
+/*PANEL SUGERENCIAS CORREO*/
+#panel{display: none;}

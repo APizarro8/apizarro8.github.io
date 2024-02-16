@@ -1,0 +1,378 @@
+
+/*------ CSS-------*/
+/*------ Class generales-------*/
+
+
+
+/*Imagenes*/
+img{}
+
+button {padding: 10px;font-size: 16px;text-align: center;}
+button:hover {background-color: #2980b9;}
+button {margin: 0 5px;}
+button {cursor: pointer;}
+
+/*Paneles para los textos de entrada*/
+form {display: grid;grid-gap: 10px;}
+label {font-weight: bold;}
+textarea {resize: vertical;}
+
+/*Tablas*/
+table {width: 100%;border-collapse: collapse;}
+th, td {text-align: center;padding: 10px;border: 1px solid #ddd;}
+th {background-color: #f2f2f2;}
+
+/*Caja 1*/
+#styloContenedorPresentacion{border-color: floralwhite;}
+#styloTitle{ font-size: medium;margin-left: 20px; padding-top: 15px;}
+#styloSubTitle{text-align: left;margin-left: 20px;font-size: medium;}
+#styloContact{text-align: right; font-size: small;padding-top: 10px;margin-right: 10px;}
+#styloBarraTop{padding: 10px;}
+#styloBarraBottom{height: 50px;}
+#styloDescargas{font-size: 10px;text-align: right;}
+#descargaCV{padding: 5px;text-align: right;}
+#descargaCarta{padding: 5px;text-align: right;}
+#descargasProyectos{padding: 5px;text-align: right;}
+#descargaespacioAzuel{padding: 5px;text-align: right;}
+#barraTopFecha{margin-right: 17px;font-size: 14px;text-align: right;padding-bottom: 15px;}
+#styloFecha{margin-right:17px;font-size: 14px;text-align: right;padding-bottom: 5px;margin-top: 5%;}
+#styloDatos{text-align: center;margin-top: 1em;margin-bottom: 1em;border-radius: 1em;border-color: floralwhite;border-width: 5px;}
+
+.tabs{margin-bottom: 2%;font-size: 11px;font-weight: 700;color: #2980b9;} /*PESTAÑAS*/
+
+/*Caja 1.2*/
+#styloContenedorProgramas{text-align: center;margin-top: 1em;margin-bottom: 1em;border-radius: 1em;border-color: floralwhite;border-width: 5px;}
+#styloAemet{text-align: center;padding: 10px;}
+
+/*Caja 2*/
+#styleGalleryPanel{border-radius: 5%;border-color: #eee;}
+#styloTitleGaleria{text-align: center;font-size: 24px; padding-top: 10px;font-weight: 500;}
+#styloContenedorDescargas{padding: 0.5em;}
+#txtResumen{text-align: center;font-weight: 300;margin-top: 10px;padding: 1%;font-size: small;}
+#txtProyectos{text-align: left;font-weight: 300;margin-left: 50px;font-size: small;}
+
+
+/*Caja 3*/
+#txtInfoVisor {display: block;position: relative;padding: 5px;font-size: small;text-align: center;justify-content: center;}
+#txtInfoWebTejar{padding: 20px;}
+#txtAccesoVisor{display: flex;justify-content: center;padding-bottom: 20px;padding-top: 3px;}
+#infoTextoTejar{font-size: x-small; align-items:center}
+
+/*Caja 4*/
+#styloTitleDescargas{align-items:right}
+#galeriaPhoto{padding-top: 5px;padding-bottom: 20px;max-width: 100%;height: auto; }
+
+#infoWebTejar{font-size: small; margin-top: 10%;}
+#infoVersion {text-align: right; font-size: 11px; margin-right: 30px;}
+
+/* Estilos para la galería */
+.gallery-container {position: relative;max-width: 600px;margin: 0 auto;}
+.gallery-img {display: none; max-width: 100%;border: 2px solid #000; /* Agregar borde a la imagen */}
+.gallery-tools {position: absolute;top: 20px;right: 0;padding: 10px;background-color: rgba(0, 0, 0, 0.5);color: white;}
+.prev, .next {position: absolute;top: 103%;transform: translateY(-50%);cursor: pointer;padding: 10px; background-color: rgba(0, 0, 0, 0.5);color: white;}
+.prev {left: 0;}
+.next {right: 0;}
+
+.toolPanel {position: absolute;top: 9%; width: 100%; transform: translateY(-50%);cursor: pointer;padding: 10px; background-color: rgba(0, 0, 0, 0.5);color: white;}
+.footPanel {position: absolute;top: 90%;  height: 5%;text-align: right;padding: 4px;
+  font-size: x-small; width: 100%; transform: translateY(-50%);cursor: pointer;background-color: rgba(0, 0, 0, 0.5);color: white;}
+.carousel {position: relative;overflow: hidden;width: 60%; /* Ajusta el ancho del carrusel según tus necesidades */}
+.carousel img {width: 100%;display: none;}
+.carousel img:first-child {display: block;}
+.carousel-indicator {position: absolute;bottom: 10px;left: 50%;transform: translateX(-50%);display: flex;}
+.carousel-indicator span {width: 10px;height: 10px;border-radius: 50%;background-color: #ccc;margin: 0 5px;cursor: pointer;}
+.carousel-indicator span.active {background-color: #4CAF50; /* Color verde para el indicador activo */} 
+
+/* Estilos para la ventana modal */
+.modal {display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);justify-content: center;align-items: center; z-index: 1;}
+.modal-content { max-width: 100%; max-height: 90vh;}
+.close {position: absolute;top: 15px;left: 15px;color: white;cursor: pointer;z-index: 1000;}
+
+.modalPhoto {display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);justify-content: center;align-items: center; z-index: 1;}
+.modalPhoto-content { max-width: 100%; max-height: 90vh;}
+.close {position: absolute;top: 15px;left: 15px;color: white;cursor: pointer;z-index: 1000;}
+
+
+/** Estilos snake*/
+#titleSnake{display: flex;justify-content: center;}
+.containerSnake  {border: 10px solid #161515;border-radius: 20px;}
+#game-container {position: relative;}
+#game-panel {display: inline-flex;flex-direction: row;position: absolute;left: 10%;padding: 10px;font-size: large;justify-content: center;
+  background-color: #eee;border: 1px solid #ccc;border-radius: 5px;width: 30%;height: 6%; align-items: center;margin-top: 7.5rem;}
+#game-panel-star {display: inline-flex;flex-direction: row;position: absolute;left: 10%;padding: 10px;
+    background-color: #eee;border: 1px solid #ccc;border-radius: 5px;width: 30%;align-items: center;margin-top: 1%;}
+#game-canvas {border: 10px solid #747272;}
+
+.score-panel, .leaderboard-panel {flex: 1;padding: 20px;box-sizing: border-box;}
+/*.snake-game {}*/
+.score-container {display: none;max-height: 342px;overflow: scroll;}
+.player-input {margin-top: 20px;}
+
+#leaderboard {list-style: none;padding: 0;}
+#leaderboard li {margin-bottom: 10px;}
+#leaderboard li:first-child {font-size: 20px;}
+
+/* Panel de propio juego*/
+.game-container {text-align: center;}
+#game-canvas {display: flex;
+  border: 10px solid #686767;
+  max-width: 100%;
+  justify-content: center;}
+#scorePanel {position: absolute;top: 10px;left: 10px;}
+.removeScore{display: inline-flex; flex-direction: row;position: absolute;right:7%;padding: 2px;background-color: #eee;border: 1px solid #ccc;border-radius: 5px;margin-top:0%;}
+  
+/*Botones*/
+#start-button{position: relative;left: 10%;width: 70%;}
+#stop-button{position: relative;left: 15%;width: 30%;}
+#botonGuardar{position: relative;padding: 5px;left: 8%;}
+#contenedortopLayersYbotonera{display: flex;}
+#buttonSaveScore{margin-top: 5%;}
+  
+#buttonNorte{position: relative;color: red;}
+#buttonSur{color: rgb(76, 0, 255);}
+#buttonEste{color: rgb(21, 255, 0);}
+#buttonOeste{color: rgb(255, 0, 170);}
+
+/* Tabla aemet*/
+.table {width: 100%;border-collapse: collapse;margin-top: 20px; overflow-x: auto;}
+.table, th, td {border: 1px solid #ddd;}
+.th, td {padding: 12px;text-align: center;  
+   /* writing-mode: vertical-lr;  Establece el modo de escritura vertical 
+    transform: rotate(180deg); /* Rota el texto en sentido antihorario */}
+.th {background-color: #f2f2f2;    }
+
+/* Graficos aemet*/
+#graficoPredicciones{margin-top: 5%;padding: 5%;}
+
+/*Panel de enviar correo*/
+#panel {display: flex;flex-direction: column;max-width: 400px;margin: 20px auto;padding: 20px;border: 1px solid #ccc;border-radius: 5px;}
+#nameInput, #messageInput, #emailPanel {margin-bottom: 15px;}
+#messageInput {display: flex;resize: vertical;}
+#emailPanel {padding: 10px;background-color: #f0f0f0;}
+#sendButton {background-color: #4caf50;color: white;border: none;padding: 10px 15px;border-radius: 5px;cursor: pointer;}
+#sendButton:hover {background-color: #45a049;}
+
+/****funcion inicial y spinner**/
+#loader {display: flex;flex-direction: column;align-items: center; justify-content: center; height:100%;background-color: #f2f2f2;}
+.spinner {border: 4px solid rgba(0, 0, 0, 0.1);border-top: 4px solid #3498db;border-radius: 50%;width: 40px;height: 40px;animation: spin 1s linear infinite;}
+#content {text-align: center;padding: 20px;}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Ventana modal elección medio. */
+.modalMedia {display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.7);}
+.modalMedia-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    text-align: center;
+    z-index: 20;
+}
+
+.closeMedia {position: absolute;top: 0;right: 0;padding: 4px;cursor: pointer;}
+#modalMediaButton{margin-left: 71%;margin-top: 0%;margin-bottom: 5%;}
+#styleModalMedia{font-size: 16px; color: black; font-family: cursive;}
+
+/* CARRUSEL DE IMAGENES*/
+#game-panel-buttons{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap:0px;
+  border: 10px solid #161515;
+  border-radius: 20px;
+  width: 45%;
+  margin-left: 50%;
+    margin-top: 3%;
+}
+
+.controles {
+  position: absolute;
+  margin-top: 2%;
+  font-size: small;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+
+/* fin CARRUSEL DE IMAGENES */
+
+/* ALERTAS*/
+.aviso {display: none;padding: 10px;margin: 10px;border-radius: 5px;font-weight: bold;text-align: center;}
+.aviso-negro {background-color: black;color: white;}
+.aviso-verde {background-color: green;color: white;}
+.aviso-amarillo {background-color: yellow;color: black;}
+.aviso-naranja {background-color: rgb(255, 30, 0);color: white;}
+
+/*TaBLON DE ANUNCIOS */
+#anuncios { border: 3px solid #111111;border-radius: 1em; padding: 10px;margin-bottom: 20px;text-align: center;margin-top: 10%;height: 200px;}
+#formulario { max-width: 600px;margin: 0 auto;text-align: center;}
+
+
+
+/* fin TaBLON DE ANUNCIOS */
+
+/* PANELES GRAFICOS*/
+#chartPanel {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#chart {
+  /* Estilos para tu gráfico */
+  width: 100%;
+  height: 100%;
+}
+
+/* FIN PANEL GRAFICOS*/
+
+/* Calendarios rutas*/
+/*Principal*/
+#calendar {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#month-year {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size:16px;
+  text-transform: capitalize; /* Convertir el texto a mayúscula al inicio */
+}
+
+#calendar th, #calendar td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#calendar th {
+  background-color: #f2f2f2;
+}
+
+
+/* Estilo para días seleccionados en rojo */
+td.selected {
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Estilo para días no seleccionados en verde */
+td:not(.selected) {
+  background-color: #1e7e1ee8;
+  cursor: pointer;
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cita-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 1rem;
+  border: 1px solid #888;
+  max-width: 400px;
+  position: relative;
+  line-height: 3em;
+}
+
+#btDescargas{
+  
+}
+
+/* FIN Calendarios rutas*/
+
+
+/*Cuadricula principal*/
+.top-bar {display: grid;
+  grid-row: 1;
+  grid-column: 1;
+  grid-column-start:1 ;
+  grid-column-end:4 ;
+  width: 100%;height: 50px;background-color: rgb(12, 179, 123);border-bottom: 6px solid  rgb(5, 129, 88);z-index: 100;}    
+
+.sidebarRight{display: grid;
+  grid-row: 1;
+  grid-column: 4; 
+  grid-column-start:4 ;
+  grid-column-end:4 ;
+  width: 15px;height: 810px;top: 0px;bottom: 20px;background-color: rgb(5, 129, 88);z-index: 5;}
+
+.sidebar {display: grid;
+  grid-row: 1;
+  grid-column: 1; 
+  grid-column-start:1 ;
+  grid-column-end:1 ;
+  width: 16px;height: 810px;top: 0px;bottom: 20px;background-color: rgb(5, 129, 88);z-index: 5;margin-left: -15px;} 
+
+/*.right-sidebar {width: 60px;;position: absolute;top: 0;bottom: 0;right: 0;background-color: rgb(5, 129, 88);} */
+
+.content {margin-top: 20px;margin-bottom: 20px;}
+
+
+
+    /* Estilo para la lista */
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* Estilo para cada elemento de la lista */
+    li {
+      margin: 10px;
+      flex: 1 0 40%; /* Hace que cada elemento ocupe el 40% del contenedor */
+      padding: 10px;
+      border: 1px solid #ccc; /* Borde con color gris claro */
+      border-radius: 5px; /* Bordes redondeados */
+    }
+
+    #listaDatosAemet{display: contents;text-align: center;}
+
+
+    

@@ -1,0 +1,62 @@
+/***************************************************************************************************************************/
+ /*.Tablets peque�as y moviles grandes en orientaci�n horizontal: */
+/***************************************************************************************************************************/
+/*Botonera direcciones SNAKE*/
+    /* Tabla aemet*/
+#map{
+    width: 100%;
+    height: 92%;}
+    /* Graficos aemet*/
+
+#graficoPredicciones{margin-top: 10%;}
+
+#chartPanel {
+    display: none;
+    position: fixed;
+    top: 65%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 30%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+
+#tablaDatos{width: 50%;height: 80%;}
+
+/*VENTANA GRAFICO*/
+#openBtn{display: none;}
+
+
+/*Barras laterales*/
+.sidebarRight{height: 600px;}
+.sidebar {height: 600px;} 
+
+
+/*********Pagina juan*****/
+/*CALENDARIO*/
+#calendar {
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-size: 11px;
+    justify-content: center;
+    padding: 2rem 0rem;
+    margin-top: 3rem;
+}
+
+#panelrutasInfo {
+    display: flex;
+    background-color: #4caf50;
+    padding: 1rem;
+    text-align: center;
+    border-radius: rem;
+}
+
+.w3-row .w3-border .w3-teal{z-index: 5000;}
+
+
+#leaderboard{background-color: white;}

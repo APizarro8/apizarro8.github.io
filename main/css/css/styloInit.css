@@ -1,0 +1,179 @@
+
+/*------ CSS-------*/
+
+@media print {
+    body {
+      width: 80%;
+      height: 60%;
+    }
+    /* Otros estilos específicos para la impresión */
+  }
+  
+@media print {
+    .container-tools {
+      display: none;
+    }
+
+    img {
+        width: 50%;
+        height: 40%; /* Para mantener la proporción original de la imagen */
+    }
+  }
+
+
+/*------ Class-------*/
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    display: grid; grid-template-columns: 3% 95% 2%; padding-left: 0px;padding-right: 0px;}
+.barraTop{background-color: rgba(176, 243, 215, 0.829); height: 70px;border: rgba(10, 161, 98, 0.829);}
+.barraBotom {background-color: rgb(220, 222, 223);color: rgb(20, 20, 20);height: 50px;bottom: 100px;}
+
+#textCRS {
+    position: absolute;
+}
+#currentLng{position: absolute;} 
+#currentLat{ position: absolute;}
+
+.tablaSRC{display: flex;}
+
+/* Cuadricula principal*/
+#map {
+    height: 90%;
+    display: grid;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    max-width: 100%;max-height: 100%; border: 10px #000000; margin-top: 50px;}
+
+
+/*stylos*/
+#styloBarratopVisor{margin-left: 0px;margin-top: 27px;}
+
+/*Titulos*/
+#tituloPrincipal{margin-left: 20px;text-align:left;margin-top: 5px;}
+#tituloweb{text-align: right;font-size: small;font-weight: 600;margin-top: 5px;margin-right: 50px;}
+#tituloVersion{text-align: right;font-size: small;font-weight: 600;margin-top: 5px;margin-left: 20px;}
+
+  
+/*Cajas*/
+#crs_container {width: fit-content;height: fit-content;position: absolute;bottom: 35px;left: 231px;margin-bottom: 7px;
+    z-index: 10000;border: 2px solid #777;border-top: none;line-height: 1.1;padding: 2px 5px 1px;font-size: 11px;
+     white-space: nowrap;-moz-box-sizing: border-box;box-sizing: border-box;background: #fff;background: rgba(255, 255, 255, 0.75);}
+#zoom_container {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 100000;
+    border: 2px solid #777;
+    line-height: 1.1;
+    padding: 4px 4px;
+    font-size: 11px;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.75);
+    font-size: medium;
+    text-align: center;
+    left: 6.4rem;
+    top: 0.2rem;
+}
+#herramientas_container {width:9.4rem;height: 5.8rem; position: absolute;z-index: 10000;border: 2px solid #777;border-top: none;
+    line-height: 1.1;padding: 2px 5px 1px;font-size: 11px; white-space: nowrap;-moz-box-sizing: border-box;box-sizing: border-box;
+    background: #078f56;background:#66ab76d9;}
+
+
+
+/*Botones Lateral*/
+#toggleButton{background-color: rgb(209, 204, 204);width: 35px;height: 35px;position: absolute; margin-top: 60px; margin-left: 2px;}
+#buttonLeyenda{background-color: rgb(209, 204, 204);width: 35px;height: 35px;position: absolute; margin-top: 120px; margin-left: 2px;}
+#buttonInfo{background-color:  rgb(209, 204, 204);width: 35px;height: 35px;position: absolute; margin-top: 180px; margin-left:2px;}
+
+
+/*Botones de la caja de herramientas*/
+#botonImprimirPDF {
+    background-color: rgb(209, 204, 204);
+    width: 8rem;
+    height: 2.5rem;
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: -0.7rem;
+    z-index: 500;
+}
+
+#buttonWMS{background-color:  rgb(209, 204, 204);width: 35px;height: 35px;position: absolute; margin-top: 0px; margin-right: 240px;z-index:500;}
+#buttonDescargas{background-color: rgb(209, 204, 204);width: 35px;height: 35px;position: absolute; margin-top:0px; margin-left: 90px;z-index:500;}
+#buttonMediciones{background-color: rgb(209, 204, 204);width: 35px;height: 35px;position: absolute; margin-top: 0px; margin-left: 135px;z-index:500;}
+#buttonFotos{background-color: rgb(209, 204, 204);width: 35px;height: 35px;position: absolute; margin-top: 0px; margin-left: 180px;z-index:500;}
+
+
+/*Iconos*/
+#iconos{position: relative;z-index: 15;width: 1em; height: 1em; display: block; margin-left: 1em; margin-top: 0.4em;}
+
+/*Paneles*/
+.panel {
+    display: none;
+    width: 150px;
+    height: 264px;
+    position: absolute;
+    top: 50px;
+    left: 28px;
+    margin-bottom: 6px;
+    z-index: 2000;
+    border: 2px solid #777;
+    border-top: none;
+    line-height: 1.1;
+    padding: 2px 5px 1px;
+    font-size: 11px;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    background: rgb(255 255 255);
+    font-size: x-large;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.leaflet-control-fullscreen-button leaflet-bar-part{left: 10px;}
+
+#stylePanelPag3{
+    padding: 2rem;
+    background-color: rgb(151, 240, 170);
+}
+
+#src{
+display: block;
+position: relative;
+padding: 0.1em;
+z-index: 50000;
+font-size: larger;
+}
+
+
+/* Estilos para la segunda tabla con la clase "mi-tabla-personalizada" */
+/* Estilos para la segunda tabla con la clase "mi-tabla-personalizada" */
+.tablaSRC {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 50px auto;
+}
+
+.tablaSRC th,
+.tablaSRC td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+}
+
+.tablaSRC th {
+  background-color: #f2f2f2;
+}
+
+.tablaSRC td.colspan {
+  text-align: center;
+}
+  
